@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/general.css">
+  <link rel="stylesheet" href="styles/desktop-size.css">
+  <link rel="stylesheet" href="styles/tablet-size.css">
+  <link rel="stylesheet" href="styles/handy-size.css">
+
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script defer src="api.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <main class="main-frame">
+      <div class="login">
+        <div class="logo-container">
+          <img class="smarttimemanager-logo" src="data/Logo.jpg" alt="Smart Time Manager Logo">
+        </div>
+        <div class="header-container">
+          <h1 class="login-header">Loggen Sie sich ein</h1>
+        </div>
+        <div id="error"></div>
+        
+          <div class="personalnummer-container">
+            <label for="personalnummer">Personalnummer</label>
+            <input id="personalnummer" name="personalnummer" type="number">
+          </div>
+          <div class="passwort-container">
+            <label for="passwort">Passwort</label>
+            <input id="passwort" name="passwort" type="password">
+          </div>
+
+          <div class="button-container">
+            <div class="kommen-gehen-container">
+              <button id="kommen-button">
+                <img class="button-bild" src="data/Kommen.png" alt="Bild fuer Kommen-Button">
+              </button>
+              <button id="gehen-button">
+                <img class="button-bild" src="data/Gehen.png" alt="Bild fuer Gehen-Button">
+              </button>
+            </div>
+            <div class="anmelden-button-container">
+              <button id="anmelden-button" onclick="validateInput()">
+                Anmelden
+              </button>
+            </div>
+          </div>
+        
+        <div class="passwort-vergessen-container">
+          <div class="filler"></div>
+          <a target="_blank" href="https://youtube.com" class="passwort-vergessen">
+            Passwort vergessen
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <section class="image-container">
+      <img class="side-image" src="data/Login.jpg" alt="Seitenbild fuer Desktop-Groesse">
+    </section>
+  </div>
+</body>
+
+</html>

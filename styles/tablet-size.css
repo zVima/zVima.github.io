@@ -1,0 +1,61 @@
+:root {
+  --clr-primary-100: #F0F0F0;
+  --clr-primary-200: #C8C8C8;
+  --clr-primary-400: #3D3D3D;
+  --clr-primary-500: #DD0051;
+}
+
+@media (max-width: 1300px) {
+  .side-image {
+    height: 0;
+    width: 0;
+  }
+
+  .login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .login-header {
+    font-size: 42px;
+    color: #3D3D3D;
+    text-align: center;
+  }
+
+  .anmelden-button-container,
+  .passwort-vergessen {
+    flex: 2;
+  }
+
+  .personalnummer-container,
+  .passwort-container {
+    color: #C8C8C8;
+    margin-bottom: 12px;
+  }
+
+  #personalnummer,
+  #passwort {
+    flex: 2;
+    border-style: none;
+    border-radius: 4px;
+    background-color: #F0F0F0;
+    color: #3D3D3D;
+    font-size: 20px;
+    padding-left: 12px;
+    margin-left: 4px;
+    height: 48px;
+  }
+
+  .passwort-vergessen {
+    text-decoration: none;
+    color: #C8C8C8;
+    margin-top: 12px;
+    text-align: center;
+  }
+
+  button {
+    margin: 2px;
+  }
+}

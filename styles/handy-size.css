@@ -1,0 +1,64 @@
+:root {
+  --clr-primary-100: #F0F0F0;
+  --clr-primary-200: #C8C8C8;
+  --clr-primary-400: #3D3D3D;
+  --clr-primary-500: #DD0051;
+}
+
+@media (max-width: 660px) {
+  .login-header {
+    text-align: left;
+    font-size: 24px;
+  }
+
+  .logo-container {
+    height: 100px;
+    margin-bottom: 16px;
+  }
+
+  .login {
+    width: 80%;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
+  .personalnummer-container,
+  .passwort-container,
+  .button-container,
+  .passwort-vergessen-container {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  .personalnummer-container,
+  .passwort-container,
+  .anmelden-button,
+  #personalnummer,
+  #passwort,
+  .button-container,
+  .logo-container,
+  .smarttimemanager-logo {
+    width: 100%;
+  }
+
+  #personalnummer,
+  #passwort {
+    margin: 0;
+  }
+
+  #anmelden-button {
+    height: 48px;
+  }
+
+  button {
+    margin: 2px;
+  }
+
+  .logo-container {
+    height: 100%;
+  }
+
+  .passwort-vergessen-container {
+    text-align: center;
+  }
+}
