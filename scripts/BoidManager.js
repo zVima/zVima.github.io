@@ -38,10 +38,10 @@ let height;
 let boundary;
 let qTree;
 
-let mouseX = 0;
-let mouseY = 0;
+let mouseX;
+let mouseY;
 
-let mousedown = false;
+let mousedown;
 
 document.addEventListener('mousemove', function(event) {
   mouseX = event.clientX;
