@@ -1,0 +1,43 @@
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: 1px solid #358bd6;
+    transition: all 150ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(-50%);
+    z-index: 1;
+}
+
+.cursor {
+    width: 4px;
+    height: 4px;
+    border-radius: 100%;
+    background-color: white;
+    opacity: 0.7;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: none;
+    z-index: 1;
+
+    transition: width 0.3s, height 0.3s, opacity 0.3s;
+}
+
+.cursor-hover {
+    width: 20px;
+    height: 20px;
+    opacity: .5;
+    border: 2px solid #358bd6;
+}
+
+.cursor-outline-hover {
+    border: none;
+}
+
+.cursor-click {
+    opacity: 1;
+}

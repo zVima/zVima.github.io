@@ -9,6 +9,6 @@ class Vector2D {
   }
 
   distance(vector) {
-    return Math.sqrt(Math.pow(vector.y - this.y, 2) + Math.pow(vector.x - this.x, 2))
+    return Math.sqrt(Math.pow(vector.y - this.y, 2) + Math.pow(vector.x - this.x, 2));
   }
 }

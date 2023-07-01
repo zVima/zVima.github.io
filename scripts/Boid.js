@@ -32,7 +32,7 @@ class Boid {
     const y = this.position.y - (this.size / 2);
 
     context.beginPath();
-    context.fillStyle = "rgba(255, 255, 255, .2)";
+    context.fillStyle = "rgba(255, 255, 255, .15)";
     context.rect(x, y, this.size, this.size);
     context.fill();
   }

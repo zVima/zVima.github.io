@@ -110,7 +110,7 @@ class QuadTree {
   show(context) {
     context.beginPath();
     context.lineWidth = 1;
-    context.strokeStyle = "rgba(255, 255, 255, 0.075)";
+    context.strokeStyle = "rgba(255, 255, 255, 0.35)";
     context.rect(this.boundary.x, this.boundary.y, this.boundary.w, this.boundary.h);
     context.stroke();
 

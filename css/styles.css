@@ -1,53 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: 'Roboto', sans-serif;
-
-  transition: all 0.2s ease;
-
-  scroll-behavior: smooth;
-  background-color: black;
-  color: white;
-}
-
-body::-webkit-scrollbar {
-  display: none;
-}
-
 #boids-canvas {
   position: fixed;
-  filter: brightness(50%) blur(3px);
-}
-
-nav {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4vw;
-
-  z-index: 1;
-  width: 100%;
-  height: 8vh;
-  backdrop-filter: blur(8px);
-}
-
-.nav-link {
-  opacity: 1;
-  text-decoration: none;
-  transition: opacity .3s ease;
-  font-size: 2vw;
-  font-weight: 100;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-}
-
-.nav-link:hover {
-  opacity: .6;
+  filter: brightness(50%) blur(8px);
 }
 
 /* Start Section */
@@ -86,9 +39,11 @@ nav {
       #3ebad7 70%,
       #43cddb 80%,
       #48d3dd 90%);
+
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 125% auto;
+  background-size: 150% auto;
   animation: textShine 2s ease infinite alternate;
 
   font-size: 4vw;
@@ -117,8 +72,6 @@ nav {
 
   height: 100%;
 }
-
-
 
 .link-image {
   width: 2rem;
@@ -180,17 +133,4 @@ nav {
 
 #third-div {
   flex: 1;
-}
-
-
-/* Scroll behaviour */
-.hidden {
-  opacity: 0;
-  filter: blur(5px);
-  transition: all 2s;
-}
-
-.show {
-  opacity: 1;
-  filter: blur(0);
 }
