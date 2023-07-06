@@ -1,26 +1,26 @@
 nav {
-    position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 4vw;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4vw;
 
-    z-index: 1;
-    width: 100%;
-    height: 8vh;
-    backdrop-filter: blur(8px);
+  z-index: 1;
+  width: 100%;
+  height: 8vh;
+  backdrop-filter: blur(8px);
 }
 
 .nav-link {
-    opacity: 1;
-    text-decoration: none;
-    transition: opacity .3s ease;
-    font-size: 2vw;
-    font-weight: 100;
-    color: white;
-    font-family: 'Roboto', sans-serif;
+  opacity: 1;
+  text-decoration: none;
+  transition: opacity .3s ease;
+  font-size: 2vw;
+  font-weight: 100;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .nav-link:hover {
-    opacity: .6;
+  opacity: .6;
 }
